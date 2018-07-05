@@ -2,13 +2,16 @@
 //  Blackjack Game
 //  By Thais Freitas with JavaScrit
 //
+let deck = [
+    "Ace of Spades",
+    "Two of Spades",
+    "Three of Spades"
+];
 
-let card1 = "Ace of Spades", 
-    card2 = "Tem of Herts";
+let playerCards = [ deck[0], deck[2]];
 
 console.log("welcome to Blackjack! ");
 
 console.log("you are dealt: ");
-console.log("  " + card1);
-console.log("  " + card2);
-
+console.log("  " + playerCards[0]);
+console.log("  " + playerCards[1]);
