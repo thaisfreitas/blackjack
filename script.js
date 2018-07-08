@@ -23,7 +23,7 @@ for (let i=0; i<deck.length; i++){
 
 let playerCards = [ deck[0], deck[2]];
 
-console.log("welcome to Blackjack! ");
+console.log(" ----- ----- welcome to Blackjack! ----- -----  ");
 
 console.log("you are dealt: ");
 console.log("  " + playerCards[0]);
