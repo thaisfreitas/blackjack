@@ -9,4 +9,3 @@
 Welcome to Blackjack game build in Javascrip by Thais =D
 
 [loading...] GAME in working in progress...
->>>>>>> 056149cfec48602319cf0d76a5d903992a24fec6
