@@ -35,6 +35,7 @@ newGameButton.addEventListener('click', function() {
     playerWon = false;
 
     deck= createDeck();
+    shuffleDeck(deck);
     dealerCards = [ getNextCard(), getNextCard() ];
     playerCards = [ getNextCard(), getNextCard() ];
     
@@ -59,6 +60,15 @@ function createDeck() {
     return deck;
 }
 
+function shuffleDeck(deck) {
+    for (let i=0; i< deck.length; i++) {
+        let swapIdx = Math.trunc(Math.random() * deck.length);
+        let tmp = deck[swapIdx];
+        deck[swapIdx] = deck[i];
+        deck[i] = tmp;
+    }
+}
+
 function getCardString(card) {
     return card.value + ' of ' + card.suit;
 }
@@ -71,5 +81,9 @@ function showStatus() {
     if(!gameStarted){
         textArea.innerText = 'Welcome to Blackjack';
         return;
+    }
+
+    for (var i=0; i<deck.length; i++) {
+        textArea.innerText += '\n' +getCardString(deck[i]);
     }
 }
